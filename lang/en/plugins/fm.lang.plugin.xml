@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language> 
+  
+  <!-- Admin File Manager -->
+  <phrase data="FMG_TITLE">File Manager</phrase>
+  <phrase data="FMG_INFO">Here you can manage your existing files. Click on note content to edit. Double click on note title to delete..</phrase>
+  <phrase data="FMG_SUB">Viewing All Files</phrase>
+  <phrase data="FMG_MULTIFILES">Multiple FIle Uploads</phrase>
+  <phrase data="FMG_BACK"> back</phrase>
+  <phrase data="FMG_HOME">Home</phrase>
+  <phrase data="FMG_NEWFD">Add New File/Folder</phrase>
+  <phrase data="FMG_CURDIR">Current Directory</phrase>
+  <phrase data="FMG_MFILEUPL">Multiple File Uploads</phrase>
+  <phrase data="FMG_VIEW_ALL">Viewing All Files</phrase>
+  <phrase data="FMG_SIZE">Filesize</phrase>
+  <phrase data="FMG_TYPE">Filetype</phrase>
+  <phrase data="FMG_UPLOADED">Uploaded</phrase>
+  <phrase data="FMG_NAME_DIR">Folder Name</phrase>	
+  <phrase data="FMG_ADD_NEW_FILE_I">Enter file name</phrase>			
+  <phrase data="FMG_ADD_NEW_DIR_I">Enter folder name</phrase>
+  <phrase data="FMG_NAME">File Name</phrase>
+  <phrase data="FMG_EMPTY">File Name cannot be empty</phrase>
+  <phrase data="FMG_RENAME">Rename File</phrase>
+  <phrase data="FMG_PATH">File Path</phrase>
+  <phrase data="FMG_URL">File Url</phrase>
+  <phrase data="FMG_FILELM">Last modified</phrase>
+  <phrase data="FMG_DELMSG">Be careful what you delete! Some files might be linked to projects, tasks, forms, etc...</phrase>
+  <phrase data="FMG_DELETE_OK">File  [NAME]  deleted successfully!</phrase>
+  <phrase data="FMG_DELETE_ERR">File  [NAME]  does not exist!</phrase>
+  <phrase data="FMG_NAME_R">Please enter valid filename.</phrase>
+  <phrase data="FMG_NAME_OK">File  [NAME]  was created successfully!</phrase>
+  <phrase data="FMG_NAME_ERR">There was an error creating file.</phrase>
+  <phrase data="FMG_DIRNAME_R">Please enter valid folder name.</phrase>
+  <phrase data="FMG_DIRNAME_OK">Folder  [NAME]  was created successfully!</phrase>
+  <phrase data="FMG_DELETED_DOK">Directory [NAME] deleted successfully!</phrase>	
+  <phrase data="FMG_DELETED_ERR">Directory [NAME] does not exist!</phrase>
+  <phrase data="FMG_DIRNAME_ERR">There was an error creating folder.</phrase>
+  <phrase data="FMG_FILE_ERR">This file type is not allowed.</phrase>
+  <phrase data="FMG_FILE_ERR1">File with the same name already exists.</phrase>
+  <phrase data="FMG_FILE_ERR2">Selected directory is not writable.</phrase>
+  <phrase data="FMG_FILE_ERR3">File is larger than the [LIMIT] limit.</phrase>
+  <phrase data="FMG_FILE_ERR4">Specified directory does not exists.</phrase>
+  <phrase data="FMG_FILE_ERR5">This file type [EXT] is not allowed.</phrase>
+  <phrase data="FMF_FILE_ERR6">Directory with the same name already exists.</phrase>
+  <phrase data="FMG_CREATE">Create</phrase>
+  <phrase data="FMG_SEL_ALL">Select All</phrase>
+  <phrase data="FMG_SEL_UALL">Unselect All</phrase>
+  <phrase data="FMG_DIRS">Directories</phrase>
+  <phrase data="FMG_FILES">Files</phrase>
+  <phrase data="FMG_FILE">File</phrase>
+  <phrase data="FMG_DELFILE">Delete File</phrase>
+  <phrase data="FMG_DELDIR">Delete Directory</phrase>
+  <phrase data="FMG_VIEWFILE">View File</phrase>
+  <phrase data="FMG_NEWFILE">New File</phrase>
+  <phrase data="FMG_CHGPER">Change Permissions</phrase>
+  <phrase data="FMG_EDITFILE">Edit File</phrase>
+  <phrase data="FMG_NEWDIR">New Directory</phrase>
+  <phrase data="FMG_VIEWPROP">File Properties</phrase>
+  <phrase data="FMG_DROPHERE">Drop Files Here</phrase>
+</language>

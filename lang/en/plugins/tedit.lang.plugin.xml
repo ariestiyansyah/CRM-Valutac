@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language> 
+  
+  <!-- Admin Code Editor -->
+  <phrase data="TED_TITLE">Source Code Editor</phrase>
+  <phrase data="TED_INFO">Here you can edit your theme and mailer files. Make sure not to remove important parts of php/javascript code.</phrase>
+  <phrase data="TED_SUB">No File Selected</phrase>
+  <phrase data="TED_SUB1">Editing File /</phrase>
+  <phrase data="TED_DEFMSG">Please select file from the list above...</phrase>
+  <phrase data="TED_SELFILE">Select file to edit</phrase>
+  <phrase data="TED_SELFILE_ERR">Selected file doe not exists...</phrase>
+  <phrase data="TED_SAVE">Save</phrase>
+  <phrase data="TED_RESTORE">Restore</phrase>
+  <phrase data="TED_ERR1">File does not exist: </phrase>
+  <phrase data="TED_ERR2">File is not writable: </phrase>
+  <phrase data="TED_ERR3">No content was submitted.</phrase>
+  <phrase data="TED_ERR4">Invalid file selected.</phrase>
+  <phrase data="TED_ERR5">Unable to write to file.</phrase>
+  <phrase data="TED_NOFILE">Error! Selected filename "[FILENAME]"  does not exist!!!</phrase>
+  <phrase data="TED_SAVED">Theme file  [TFILE] saved successfully!</phrase>
+  <phrase data="TED_RESTORED">Theme file  [TFILE] restored successfully!</phrase>
+</language>

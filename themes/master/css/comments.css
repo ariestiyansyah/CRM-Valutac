@@ -1,0 +1,148 @@
+/* == Comments == */
+.wojo.comments a {
+  cursor: pointer;
+}
+.wojo.comments .comment {
+  position: relative;
+  margin-top: 0.5em;
+  padding-top: 0.5em;
+}
+.wojo.comments .comment:first-child {
+  margin-top: 0em;
+  padding-top: 0em;
+}
+/* == Avatar == */
+.wojo.comments .comment .avatar {
+  display: block;
+  float: left;
+  width: 4em;
+}
+.wojo.comments .comment .avatar img {
+  display: block;
+  margin: 0em auto;
+  width: 3em;
+  height: 3em;
+  border-radius: 500px;
+}
+/* == Content == */
+.wojo.comments .comment > .content,
+.wojo.comments .comment > .avatar {
+  display: block;
+}
+.wojo.comments .comment .avatar ~ .content {
+  padding: 0em 1em;
+}
+.wojo.comments .comment > .avatar ~ .content {
+  padding-top: 0.25em;
+  margin-left: 3.5em;
+}
+.wojo.comments .comment .metadata {
+  display: inline-block;
+  margin-left: 0.3em;
+  color: rgba(0, 0, 0, 0.4);
+}
+.wojo.comments .comment .metadata > * {
+  display: inline-block;
+  margin: 0em 0.3em 0em 0em;
+}
+/* == Text == */
+.wojo.comments .comment .text {
+  word-wrap: break-word;
+  position: relative;
+  box-shadow: inset 0 1px 0 0 #E14D43;
+  margin-top: .5em;
+  padding-top:.5em
+}
+/* == Actions == */
+.wojo.comments .comment .actions {
+  font-size: 0.9em;
+}
+.wojo.comments .comment .actions a {
+  display: inline-block;
+  margin: 0em 0.3em 0em 0em;
+  color: rgba(0, 0, 0, 0.3);
+}
+.wojo.comments .comment .actions a.active,
+.wojo.comments .comment .actions a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+/* == Reply == */
+.wojo.comments .reply.form {
+  margin-top: 0.75em;
+  width: 100%;
+  max-width: 30em;
+}
+.wojo.comments .comment .reply.form {
+  margin-left: 2em;
+}
+.wojo.comments > .reply.form {
+  margin-top: 1.5em;
+  max-width: 40em;
+}
+.wojo.comments .reply.form textarea {
+  height: 12em;
+}
+/* == Nested == */
+.wojo.comments .comment .comments {
+  margin-top: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+}
+.wojo.comments .comment .comments:before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.wojo.comments > .comment .comments {
+  margin-left: 2em;
+}
+.wojo.comments > .comment > .comments > .comment > .comments {
+  margin-left: 1.75em;
+}
+.wojo.comments > .comment > .comments > .comment > .comments > .comment > .comments {
+  margin-left: 1.5em;
+}
+.wojo.comments > .comment > .comments > .comment > .comments > .comment > .comments > .comment .comments {
+  margin-left: 0.5em;
+}
+/* == Threaded == */
+.wojo.threaded.comments .comment .comments {
+  margin-left: 2em;
+  padding-left: 2em;
+  -webkit-box-shadow: -1px 0px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: -1px 0px 0px rgba(0, 0, 0, 0.05);
+}
+.wojo.threaded.comments .comment {
+  border-radius: 0.225em;
+  padding: 1em;
+  margin-top: 1.5em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.wojo.threaded.comments .comment:before {
+  background: rgba(0,0,0,0.05);
+  bottom: 0;
+  content: "";
+  left: 2.8em;
+  position: absolute;
+  top: 80%;
+  width: 2px
+}
+.wojo.comments .comment a.delete {
+  float: right
+}
+/* == Variations == */
+.wojo.minimal.comments .comment .actions {
+  opacity: 0;
+  -webkit-transition: opacity 0.1s ease-out;
+  -moz-transition: opacity 0.1s ease-out;
+  transition: opacity 0.1s ease-out;
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+.wojo.minimal.comments .comment > .content:hover > .actions {
+  opacity: 1;
+}
+.wojo.small.comments {
+  font-size: 0.875em;
+}

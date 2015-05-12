@@ -1,0 +1,133 @@
+/* == Progress == */
+.wojo.progress {
+  width: 100%;
+  height: 24px;
+  background-color: rgba(0,0,0,0.25);
+  border-radius: 0.3125em;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box
+}
+.wojo.progress.fitted{
+  margin-bottom:0;
+  
+}
+.wojo.progress .bar {
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  -webkit-transition: width 1s ease-in-out, background-color 1s ease-out;
+  transition: width 1s ease-in-out, background-color 1s ease-out;
+  font-size: .85em;
+  color: #FFF;
+  text-align: center
+}
+.wojo.progress.thin {
+  height:12px;
+  border-radius:.2em
+}
+/* == Active == */
+.wojo.active.progress .bar {
+  position: relative
+}
+.wojo.active.progress .bar::after {
+  content: '';
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  -webkit-animation: progress-active 2s ease-out infinite;
+  animation: progress-active 2s ease-out infinite
+}
+ @-webkit-keyframes progress-active {
+ 0% {
+ opacity: 0;
+ width: 0
+}
+ 50% {
+ opacity: 0.3
+}
+ 100% {
+ opacity: 0;
+ width: 95%
+}
+}
+ @keyframes progress-active {
+ 0% {
+ opacity: 0;
+ width: 0
+}
+ 50% {
+ opacity: 0.3
+}
+ 100% {
+ opacity: 0;
+ width: 100%
+}
+}
+/* == Colors == */
+.wojo.info.progress .bar {
+  background-color: #3b6891
+}
+.wojo.black.progress .bar {
+  background-color: #5C6166
+}
+.wojo.success.progress .bar {
+  background-color: #3a8d6e
+}
+.wojo.warning.progress .bar {
+  background-color: #848837
+}
+.wojo.danger.progress .bar {
+  background-color: #a5414f
+}
+.wojo.purple.progress .bar {
+  background-color: #8A3ECA
+}
+.wojo.teal.progress .bar {
+  background-color: #3CC9CA
+}
+/* == Stripped == */
+.wojo.progress.striped .bar {
+  -webkit-background-size: 30px 30px;
+  background-size: 30px 30px;
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.wojo.progress.thin.striped .bar {
+  -webkit-background-size: 20px 20px;
+  background-size: 20px 20px
+}
+.wojo.progress.active.striped .bar:after {
+  -webkit-animation: none;
+  -ms-animation: none;
+  animation: none
+}
+.wojo.progress.active.striped .bar {
+  -webkit-animation: progress-striped 3s linear infinite;
+  animation: progress-striped 3s linear infinite
+}
+ @-webkit-keyframes progress-striped {
+ 0% {
+ background-position: 0px 0
+}
+ 100% {
+ background-position: 60px 0
+}
+}
+ @keyframes progress-striped {
+ 0% {
+ background-position: 0px 0
+}
+ 100% {
+ background-position: 60px 0
+}
+}

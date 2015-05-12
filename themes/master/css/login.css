@@ -1,0 +1,233 @@
+html,
+body {
+  font-size: 14px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  color: #595959;
+  text-rendering: optimizeLegibility;
+  font-weight: 300;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-image: url(../images/loginbg.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 100%;
+}
+a,
+a.inverted,
+a.white {
+  cursor: pointer;
+  color: #FF4A2C;
+  text-decoration: none;
+  -webkit-transition: all .35s ease;
+  -moz-transition: all .35s ease;
+  -o-transition: all .35s ease;
+  transition: all .35s ease;
+  outline: none;
+  white-space: nowrap;
+}
+a.inverted {
+  color: #999;
+}
+a.white {
+  color: #fff;
+}
+a:hover,
+a.hover,
+a:focus {
+  color: #9DC745;
+  -webkit-transition: all .55s ease;
+  -moz-transition: all .55s ease;
+  -o-transition: all .35s ease;
+  transition: all .55s ease;
+  outline: none;
+  text-decoration: none
+}
+a.inverted:hover,
+a.inverted:focus {
+  color: #E14D43;
+}
+a.white:hover,
+a.white:focus {
+  color: #E14D43;
+}
+hr {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: 0;
+  height: 3px;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0));
+  background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0));
+  background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0));
+  background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0));
+}
+h1,
+h2,
+h2.h3.h4,
+h3,
+h5,
+h6 {
+  font-family: 'Roboto';
+  color: #4B4B4B;
+  margin-bottom: 1rem;
+}
+h1{
+  font-weight:300
+}
+.wojo.message .header,
+.wojo.button {
+  font-family: "Roboto", sans-serif;
+}
+.wojo-content {
+  padding: 1em;
+}
+#lpanel,
+#lpanel2 {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: block;
+  width: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #272d30;
+  padding: 70px 0 200px;
+}
+#lpanel .wrapper {
+  margin: 0 auto;
+  max-width: 400px;
+}
+#lpanel2 .wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+}
+#rpanel,
+#rpanel2 {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  display: block;
+  width: 30%;
+  position: absolute;
+  top: 0;
+  right: 0
+}
+#rpanel .inner,
+#rpanel2 .inner {
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+}
+#login-date {
+  text-align: center;
+  padding-top: 120px;
+  margin-bottom: 120px;
+  font-size: 4em;
+  font-weight: 200;
+  color: #fff;
+}
+#login-date span {
+  color: #9DC745
+}
+#latest-news {
+  height: 200px;
+  overflow: hidden;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: #fff;
+  position: relative;
+}
+#latest-news .inner {
+  padding-left: 1em;
+}
+#latest-news div.date em {
+  font-size: 4em;
+  font-weight: 200;
+  font-style: normal;
+}
+#latest-news .month {
+  display: inline-block;
+  margin-left: 1em;
+  margin-top: 1em;
+  font-size: 1.2em;
+  font-weight: 300;
+  vertical-align: top;
+}
+#cityloc {
+  bottom: 0;
+  box-sizing: border-box;
+  left: 50px;
+  position: absolute;
+  width: 100%
+}
+.rquote {
+  margin-bottom: 2em;
+}
+.rquote span {
+  font-style: italic;
+  font-weight: 500;
+}
+#ifooter {
+  background: rgba(0,0,0,0.15);
+  bottom: 0;
+  box-sizing: border-box;
+  left: 0;
+  padding: 2em;
+  position: absolute;
+  width: 70%;
+  box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.05), 0 -1px 0 0 rgba(0,0,0,0.20);
+}
+#ifooter .wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+}
+ @media screen and (min-width:650px) and (max-width:1024px) {
+#lpanel {
+  width: 60%;
+}
+#lpanel2 {
+  width: 100%;
+}
+#rpanel,
+#rpanel {
+  width: 40%;
+}
+#rpanel2 {
+  display: none
+}
+#ifooter {
+  width: 60%;
+}
+#menu li a {
+  font-size: 1.2em;
+}
+#menu li a > i {
+  font-size: 1em;
+}
+}
+@media screen and (max-width:769px) {
+#lpanel,
+#lpanel2 {
+  width: 100%;
+  float: none
+}
+#rpanel,
+#rpanel2 {
+  display: none
+}
+#ifooter {
+  width: 100%;
+}
+#menu li a {
+  font-size: 1em;
+}
+#menu li a > i {
+  font-size: 1em;
+}
+}

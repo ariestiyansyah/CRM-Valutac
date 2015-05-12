@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+  
+  <!-- Admin Notes -->
+  <phrase data="NTS_TITLE">Manage Sticky Notes</phrase>
+  <phrase data="NTS_INFO">Here you can manage your sticky notes. Click on note content to edit. Double click on note title to delete..</phrase>
+  <phrase data="NTS_SUB">
+
+Viewing Sticky Notes</phrase>
+  <phrase data="NTS_ADDNEW">Add a Note</phrase>
+  <phrase data="NTS_NONOTES">You don't have any notes yet...</phrase>
+  <phrase data="NTS_EDITNOTE">Editing Note / </phrase>
+  <phrase data="NTS_ADDNOTE">Adding New Note</phrase>
+  <phrase data="NTS_NAME">Note Title</phrase>
+  <phrase data="NTS_CONTENT">Note Content</phrase>
+  <phrase data="NTS_COLOR">Note Color</phrase>
+  <phrase data="NTS_CBLUE">Blue</phrase>
+  <phrase data="NTS_CGREEN">Green</phrase>
+  <phrase data="NTS_CRED">Red</phrase>
+  <phrase data="NTS_CPINK">Purple</phrase>
+  <phrase data="NTS_CYELLOW">Yellow</phrase>
+  <phrase data="NTS_CTEAL">Teal</phrase>
+  <phrase data="NTS_CGREY">Grey</phrase>
+  <phrase data="NTS_UPDATE">Update Note</phrase>
+  <phrase data="NTS_ADDNEW">Add Note</phrase>
+  <phrase data="NTS_DELNOTE_OK">Note [NAME]  deleted successfully!</phrase>
+  <phrase data="NTS_UPDATED">Note updated successfully!</phrase>
+  <phrase data="NTS_ADDED">Note added successfully!</phrase>
+</language>

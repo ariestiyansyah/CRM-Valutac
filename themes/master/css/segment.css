@@ -1,0 +1,379 @@
+/* == Segment == */
+.wojo.segment {
+  position: relative;
+  background-color:rgba(54,68,83,0.65);
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: .225em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px 1px rgba(0,0,0,0.05)
+}
+.wojo.segment:first-child {
+  margin-top: 0
+}
+.wojo.segment:last-child {
+  margin-bottom: 0
+}
+.wojo.segment:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden
+}
+.wojo.segment > :first-child {
+  margin-top: 0
+}
+.wojo.segment > :last-child {
+  margin-bottom: 0
+}
+.wojo.segment > .content {
+  padding: 1em
+}
+/* == Types == */
+.wojo.piled.segment {
+  margin: 2em 0;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,0.15);
+  -ms-box-shadow: 0 0 1px 1px rgba(0,0,0,0.15);
+  -o-box-shadow: 0 0 1px 1px rgba(0,0,0,0.15);
+  box-shadow: 0 0 1px 1px rgba(0,0,0,0.15)
+}
+.wojo.piled.segment:first-child {
+  margin-top: 0
+}
+.wojo.piled.segment:last-child {
+  margin-bottom: 0
+}
+.wojo.piled.segment:after,
+.wojo.piled.segment:before {
+  background-color: #FFF;
+  visibility: visible;
+  content: "";
+  display: block;
+  height: 100%;
+  left: -1px;
+  position: absolute;
+  width: 100%;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 0 1px 1px rgba(0,0,0,0.1)
+}
+.wojo.piled.segment:after {
+  -webkit-transform: rotate(1.2deg);
+  -ms-transform: rotate(1.2deg);
+  transform: rotate(1.2deg);
+  top: 0;
+  z-index: -1
+}
+.wojo.piled.segment:before {
+  -webkit-transform: rotate(-1.2deg);
+  -ms-transform: rotate(-1.2deg);
+  transform: rotate(-1.2deg);
+  top: 0;
+  z-index: -2
+}
+.wojo.stacked.segment {
+  padding-bottom: 1.7em
+}
+.wojo.stacked.segment:after,
+.wojo.stacked.segment:before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,0.02);
+  width: 100%;
+  height: 5px;
+  visibility: visible
+}
+.wojo.stacked.segment:before {
+  bottom: 0
+}
+.wojo.stacked.inverted.segment:after,
+.wojo.stacked.inverted.segment:before {
+  background-color: rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255,255,255,0.35)
+}
+.wojo.raised.segment {
+  -webkit-box-shadow: 0 1px 2px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 2px 1px rgba(0,0,0,0.1)
+}
+/* == Variations == */
+.wojo.basic.segment {
+  position: relative;
+  border-radius: 0;
+  border:0;
+  -webkit-box-shadow: 0 1px 1px 1px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 1px 1px rgba(0,0,0,0.05)
+}
+.wojo.basic.segment:first-child {
+
+}
+.wojo.basic.segment:last-child {
+
+}
+.wojo.fitted.segment {
+  padding: 0;
+  border: 0
+}
+.wojo.tabular.segment {
+  background-color: #fff;
+  padding:0;
+  margin:0;
+  margin-bottom:4px;
+  border-radius: 0;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.04);
+  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  display:table;
+  width:100%
+}
+/*
+.wojo.tabular.segment > section,
+.wojo.tabular.segment > aside  {
+  display:table-cell;
+  padding:0
+}
+.wojo.tabular.segment > section  {
+  width: auto;
+}
+*/
+.wojo.secondary.segment {
+  background-color: #fff;
+}
+.wojo.tertiary.segment {
+  border: 1px solid rgba(0,0,0,.075);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.04);
+  background-color:rgba(54,68,83,.65);
+  padding: 1.5em;
+  border-radius: 0;
+  position: relative;
+  z-index: 1;
+}
+.wojo.tertiary.segment:before {
+  background: #FF4A2C;
+  color: #FF4A2C;
+  content: "";
+  display: block;
+  height: 40px;
+  left: 0;
+  position: absolute;
+  text-indent: 5px;
+  top: 1em;
+  width: 2px;
+}
+/* == Colors == */
+.wojo.info.segment .header,
+.wojo.positive.segment .header,
+.wojo.danger.segment .header,
+.wojo.negative.segment .header,
+.wojo.warning.segment .header,
+.wojo.purple.segment .header,
+.wojo.teal.segment .header,
+.wojo.info.segment .footer,
+.wojo.positive.segment .footer,
+.wojo.danger.segment .footer,
+.wojo.negative.segment .footer,
+.wojo.warning.segment .footer,
+.wojo.purple.segment .footer,
+.wojo.teal.segment .footer {
+  background-color: #5795AF;
+  color: #fff;
+  border-radius: .225em .225em 0 0;
+  padding: 1em;
+}
+.wojo.info.segment .footer,
+.wojo.positive.segment .footer,
+.wojo.danger.segment .footer,
+.wojo.negative.segment .footer,
+.wojo.warning.segment .footer,
+.wojo.purple.segment .footer,
+.wojo.teal.segment .footer {
+  border-radius: 0 0 .225em .225em;
+}
+.wojo.info.segment .header a.link,
+.wojo.positive.segment .header a.link,
+.wojo.danger.segment .header a.link,
+.wojo.negative.segment .header a.link,
+.wojo.warning.segment .header a.link,
+.wojo.purple.segment .header a.link,
+.wojo.teal.segment .header a.link {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+.wojo.info.segment .header a.link {
+  color: #5795AF;
+}
+.wojo.positive.segment .header a.link {
+  color: #3E7558;
+}
+.wojo.danger.segment .header a.link,
+.wojo.negative.segment .header a.link {
+  color: #ac7070;
+}
+.wojo.warning.segment .header a.link {
+  color: #FEDD8C;
+}
+.wojo.purple.segment .header a.link {
+  color: #87719f;
+}
+.wojo.teal.segment .header a.link {
+  color: #61A299;
+}
+.wojo.positive.inverted.segment,
+.wojo.danger.inverted.segment,
+.wojo.negative.inverted.segment,
+.wojo.warning.inverted.segment,
+.wojo.purple.inverted.segment,
+.wojo.teal.inverted.segment,
+.wojo.info.inverted.segment,
+.wojo.info.segment .header a.link:hover,
+.wojo.positive.segment .header a.link:hover,
+.wojo.danger.segment .header a.link:hover,
+.wojo.negative.segment .header a.link:hover,
+.wojo.warning.segment .header a.link:hover,
+.wojo.purple.segment .header a.link:hover,
+.wojo.teal.segment .header a.link:hover {
+  color: #fff;
+  text-shadow: none;
+}
+.wojo.positive.inverted.segment,
+.wojo.positive.segment .header,
+.wojo.positive.segment .footer {
+  background-color: #92B06A;
+}
+.wojo.danger.inverted.segment,
+.wojo.danger.segment .header,
+.wojo.danger.segment .footer,
+.wojo.negative.inverted.segment,
+.wojo.negative.segment .header,
+.wojo.negative.segment .footer {
+  background-color: #DD5F32
+}
+.wojo.warning.inverted.segment,
+.wojo.warning.segment .header,
+.wojo.warning.segment .footer {
+  background-color: #E19D29
+}
+.wojo.purple.inverted.segment,
+.wojo.purple.segment .header,
+.wojo.purple.segment .footer {
+  background-color: #A48AD4
+}
+.wojo.teal.inverted.segment,
+.wojo.teal.segment .header,
+.wojo.teal.segment .footer {
+  background-color: #54BDB5
+}
+.wojo.info.inverted.segment,
+.wojo.info.segment .header,
+.wojo.info.segment .footer {
+  background-color: #4298B5
+}
+.wojo.black.inverted.segment,
+.wojo.black.segment .header,
+.wojo.black.segment .footer {
+  background-color: #273343;
+}
+.wojo.info.segment:not(.fitted) {
+  border-top: 0
+}
+.wojo.positive.segment:not(.fitted) {
+  border-top: 0
+}
+.wojo.danger.segment:not(.fitted),
+.wojo.negative.segment:not(.fitted) {
+  border-top: 0
+}
+.wojo.warning.segment:not(.fitted) {
+  border-top: 0
+}
+.wojo.purple.segment:not(.fitted) {
+  border-top: 0
+}
+.wojo.teal.segment:not(.fitted) {
+  border-top: 0
+}
+.wojo.positive.inverted.segment,
+.wojo.danger.inverted.segment,
+.wojo.negative.inverted.segment,
+.wojo.warning.inverted.segment,
+.wojo.purple.inverted.segment,
+.wojo.teal.inverted.segment,
+.wojo.black.inverted.segment,
+.wojo.info.inverted.segment {
+  -webkit-box-shadow:none;
+}
+/* == Aligned == */
+.wojo.left.aligned.segment {
+  text-align: left
+}
+.wojo.right.aligned.segment {
+  text-align: right
+}
+.wojo.center.aligned.segment {
+  text-align: center
+}
+.wojo.justified.segment {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto
+}
+/* == Floated == */
+.wojo.floated.segment,
+.wojo.left.floated.segment {
+  float: left
+}
+.wojo.right.floated.segment {
+  float: right
+}
+/* == Attached == */
+.wojo.segment.attached {
+  top: -1px;
+  bottom: -1px;
+  border-radius: 0;
+  margin: 0;
+  -webkit-box-shadow:none;
+  box-shadow:none
+}
+.wojo.top.attached.segment {
+  top: 0;
+  bottom: -1px;
+  margin-top: 1em;
+  margin-bottom: 0;
+  border-radius: 5px 5px 0 0
+}
+.wojo.segment.top.attached:first-child {
+  margin-top: 0
+}
+.wojo.segment.bottom.attached {
+  top: -1px;
+  bottom: 0;
+  margin-top: 0;
+  margin-bottom: 1em;
+  border-radius: 0 0 5px 5px
+}
+.wojo.segment.bottom.attached:last-child {
+  margin-bottom: 0
+}
+
+/* == Loading == */
+.wojo.segment.loading {
+  position: relative
+}
+.wojo.segment.loading:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8) url(../images/loader-large.gif) no-repeat 50% 50%;
+  visibility: visible;
+  z-index: 5000;
+}

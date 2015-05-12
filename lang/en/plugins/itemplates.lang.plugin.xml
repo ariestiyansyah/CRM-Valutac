@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+  
+  <!-- Admin Invoice Templates -->
+  <phrase data="ITP_TITLE">Manage Invoice Templates</phrase>
+  <phrase data="ITP_INFO">Here you can manage your invoice templates.</phrase>
+  <phrase data="ITP_SUB">Viewing Invoice Templates</phrase>
+  <phrase data="ITP_PREVIEW">Preview</phrase>
+  <phrase data="ITP_DEFAULT">Set Default</phrase>
+  <phrase data="ITP_NOFILE">Template file not found.</phrase>
+  <phrase data="ITP_NOFILE_PDF">Pdf Template file not found.</phrase>
+  <phrase data="ITP_NOFILE_PRINT">Print Template file not found.</phrase>
+  <phrase data="ITP_SETOK">Default Template [NAME] set successfully!</phrase>
+</language>

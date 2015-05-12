@@ -1,0 +1,336 @@
+/* == Messge == */
+.wojo.message {
+  position: relative;
+  min-height: 18px;
+  margin: 1em 0;
+  height: auto;
+  background-color: #E9E9E1;
+  padding: 1em;
+  line-height: 1.33;
+  color: rgba(0,0,0,0.6);
+  -webkit-transition: opacity .1s ease, color .1s ease, background .1s ease, 0 .1s ease;
+  transition: opacity .1s ease, color .1s ease, background .1s ease, box-shadow .1s ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: .425em;
+}
+.wojo.message > span {
+  font-weight: 600;
+  font-family: 'Roboto Condensed';
+  margin-right:.5em;
+}
+/* == Notes == */
+.wojo.note {
+  position: relative;
+  padding: 1em;
+  background-color: #E9E9E1;
+  box-shadow: inset 8px 0 0 0 rgba(0,0,0,0.15);
+  -webkit-transition: opacity .1s ease, color .1s ease, background .1s ease, 0 .1s ease;
+  transition: opacity .1s ease, color .1s ease, background .1s ease, box-shadow .1s ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: .325em;
+  margin-bottom:.5em;
+  padding-left:3em;
+}
+.wojo.note:last-child {
+  margin-bottom:0;
+}
+.wojo.note a.note-close {
+  opacity:0;
+}
+.wojo.note:hover a.note-close{
+  opacity: 1;
+}
+.wojo.note i.icon.close {
+  position: absolute;
+  left: 1em;
+  top: .5em;
+  color: rgba(0,0,0,0.8)
+}
+.wojo.note > .header{
+  font-weight: 700;  
+}
+.wojo.note > .aside{
+  float: right;
+  text-align: right;
+  font-size:.85em;
+}
+.wojo.note.success {
+  background-color: #d4e7b8;
+  color:#74993a;
+}
+.wojo.note.info {
+  background-color: #d8e5f3;
+  color: #417dbe
+}
+.wojo.note.warning {
+  background-color: #fef0cd;
+  color: #f7b208
+}
+.wojo.note.danger {
+  background-color: #ebc7cc;
+  color:#a5414f
+}
+.wojo.note.purple {
+  background-color: #e1d7f4;
+  color: #6b3ac5
+}
+.wojo.note.teal {
+  background-color: #77dbdc;
+  color:#1e6868
+}
+/* == Notices == */
+#wojo-overlay {
+  position: fixed;
+  top: 45%;
+  right: 10px;
+  max-width: 350px;
+  z-index: 9999;
+}
+.wojo.message.notice {
+  border-radius: .225em;
+  box-shadow: 6px 6px 0 0 rgba(0,0,0,0.08),  inset 5px 0 0 0 rgba(0,0,0,0.3),  inset 6px 0 0 0 rgba(255,255,255,0.15);
+  margin-top: 1px;
+  margin-bottom: 0;
+  cursor: pointer; 
+}
+.wojo.message.notice span {
+  font-weight: 600;
+  font-family: 'Roboto Condensed';
+}
+.wojo.message.notice p {
+  margin-top: 0;
+}
+.wojo.message.notice a.notice-close {
+  opacity:0;
+}
+.wojo.message.notice:hover a.notice-close{
+  opacity: 1;
+}
+.wojo.message.notice i.icon.close {
+  position: absolute;
+  right: 1em;
+  top: .5em;
+  color: rgba(255,255,255,0.8)
+}
+.wojo.message.notice.success {
+  background-color: #2E3745;
+  color: #3a8d6e;
+}
+.wojo.message.notice.info {
+  background-color: #2E3745;
+  color: #3b6891
+}
+.wojo.message.notice.warning {
+  background-color: #2E3745;
+  color: #848837
+}
+.wojo.message.notice.error {
+  background-color: #2E3745;
+  color: #a5414f
+}
+.wojo.message:first-child {
+  margin-top: 0
+}
+.wojo.message:last-child {
+  margin-bottom: 0
+}
+.wojo.message.basic.notice {
+  box-shadow:inset 5px 0 0 0 rgba(0,0,0,0.3);
+}
+
+.wojo.message.notice.success,
+.wojo.message.notice.info,
+.wojo.message.notice.warning,
+.wojo.message.notice.error {
+  text-shadow:none;
+}
+/* == Content == */
+.wojo.message .header {
+  margin: 0;
+  font-size: 1.35em;
+  font-weight: 700;
+  font-family: 'Roboto Condensed'
+}
+.wojo.message p {
+  margin: 1em 0
+}
+.wojo.message p:first-child {
+  margin-top: 0
+}
+.wojo.message p:last-child {
+  margin-bottom: 0
+}
+.wojo.message .header + p {
+  margin-top: .3em
+}
+.wojo.message > :first-child {
+  margin-top: 0
+}
+.wojo.message > :last-child {
+  margin-bottom: 0
+}
+.wojo.message ul.list {
+  list-style-position: inside;
+  margin: .2em 0;
+  padding: 0
+}
+.wojo.message ul.list li:first-child{
+  margin-top:.5em
+}
+.wojo.message ul.list li {
+  position: relative;
+  list-style-type: none;
+  margin: 0 0 .3em 1em;
+  padding: 0;
+  font-weight: 400;
+  font-family: 'Roboto Condensed'
+}
+.wojo.message ul.list li:before {
+  position: absolute;
+  content: '\2022';
+  top: -.05em;
+  left: -.8em;
+  height: 100%;
+  vertical-align: baseline;
+  opacity: 0.5
+}
+/* == Dismissable == */
+.wojo.message > .close.icon {
+  cursor: pointer;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  opacity: 0.7;
+  -webkit-transition: opacity .1s linear;
+  transition: opacity .1s linear
+}
+.wojo.message > .close.icon:hover {
+  opacity: 1
+}
+/* == Variations == */
+.wojo.basic.message {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 3px rgba(0,0,0,0.2);
+  color: rgba(255,255,255,0.6)
+}
+.wojo.compact.message {
+  display: inline-block
+}
+.wojo.attached.message {
+  margin-left: -1px;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  border-radius: .325em .325em 0 0;
+  -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.1) inset;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.1) inset
+}
+.wojo.attached + .wojo.attached.message:not(.top):not(.bottom) {
+  margin-top: -1px;
+  border-radius: 0
+}
+.wojo.bottom.attached.message {
+  margin-top: -1px;
+  border-radius: 0 0 .325em .325em
+}
+.wojo.bottom.attached.message:not(:last-child) {
+  margin-bottom: 1em
+}
+.wojo.attached.icon.message {
+  display: block;
+  width: auto
+}
+.wojo.icon.message {
+  display: table;
+  width: 100%
+}
+.wojo.icon.message > .icon:not(.close) {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 2em;
+  opacity: 0.75;
+  width:2em
+}
+.wojo.icon.message a.helper{
+  font-size:2em;
+  line-height:1
+}
+.wojo.icon.message > .icon + .content {
+  padding-left: 1em
+}
+.wojo.icon.message > .content {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+.wojo.inverted.message {
+  background-color: rgba(255,255,255,0.05);
+  color: rgba(255,255,255,0.95)
+}
+.wojo.floating.message {
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.05) inset;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.05) inset
+}
+/* == Colors == */
+.wojo.black.message,
+.wojo.inverted.message {
+  background-color: rgba(0,0,0,0.1);
+  box-shadow:inset 0 -5px 0 0 rgba(0,0,0,0.1);
+  color: #6E7988;
+  text-shadow: none
+}
+.wojo.info.message {
+  background-color: #3b6891;
+  color: rgba(0,0,0,0.5);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+.wojo.warning.message {
+  background-color: #848837;
+  color: rgba(0,0,0,0.5);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+.wojo.success.message,
+.wojo.positive.message {
+  background-color: #3a8d6e;
+  color: rgba(0,0,0,0.5);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+.wojo.error.message,
+.wojo.negative.message {
+  background-color: #a5414f;
+  color: rgba(0,0,0,0.5);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+.wojo.inverted.message .header,
+.wojo.black.message .header {
+  text-shadow: none
+}
+.wojo.info.message .header,
+.wojo.warning.message .header,
+.wojo.success.message .header,
+.wojo.positive.message .header,
+.wojo.error.message .header,
+.wojo.negative.message .header {
+
+}
+/* == Size == */
+.wojo.small.message {
+  font-size: .875em
+}
+.wojo.message {
+  font-size: 1em
+}
+.wojo.large.message {
+  font-size: 1.125em
+}
+.wojo.huge.message {
+  font-size: 1.5em
+}
+.wojo.massive.message {
+  font-size: 2em
+}

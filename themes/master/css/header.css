@@ -1,0 +1,321 @@
+/* == Header == */
+.wojo.header {
+  border: none;
+  margin: 1rem 0 1rem;
+  padding: 0em;
+  font-size: 1.33em;
+  font-family: 'Roboto';
+  font-weight: 400;
+  line-height: 1.33;
+}
+.wojo.header .sub.header {
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0em;
+  padding: 0em;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.5);
+}
+.wojo.header .icon {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 0.5em;
+}
+.wojo.header .icon:only-child {
+  display: inline-block;
+  vertical-align: baseline;
+}
+.wojo.header .content {
+  display: inline-block;
+  vertical-align: top;
+}
+.wojo.header .icon + .content {
+  padding-left: 0.5em;
+  display: table-cell;
+}
+.wojo.header:first-child {
+  margin-top: 0em;
+}
+.wojo.header:last-child {
+  margin-bottom: 0em;
+}
+.wojo.header + p {
+  margin-top: 0em;
+}
+/* == Page Headings == */
+h1.wojo.header,
+h1 {
+  min-height: 1rem;
+  line-height: 1.33;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+h2.wojo.header,
+h2 {
+  line-height: 1.33;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+h3.wojo.header,
+h3 {
+  line-height: 1.33;
+  font-size: 1.55rem;
+  font-weight: 300;
+}
+h4.wojo.header,
+h4 {
+  line-height: 1.33;
+  font-size: 1.1rem;
+  margin: 1em 0em 1rem;
+}
+h5.wojo.header,
+h5 {
+  line-height: 1.2;
+  font-size: 1rem;
+}
+/* == Content Headers == */
+.wojo.huge.header {
+  min-height: 1em;
+  font-size: 2em;
+}
+.wojo.large.header {
+  font-size: 1.75em;
+}
+.wojo.medium.header {
+  font-size: 1.33em;
+}
+.wojo.small.header {
+  font-size: 1.1em;
+}
+.wojo.tiny.header {
+  font-size: 1em;
+}
+/* == Types == */
+.wojo.icon.header {
+  display: inline-block;
+  text-align: center;
+}
+.wojo.icon.header .icon {
+  float: none;
+  display: block;
+  font-size: 3em;
+  margin: 0em auto 0.2em;
+  padding: 0em;
+}
+.wojo.icon.header .content {
+  display: block;
+}
+.wojo.icon.header .circular.icon,
+.wojo.icon.header .square.icon {
+  font-size: 2em;
+}
+.wojo.block.icon.header .icon {
+  margin-bottom: 0em;
+}
+.wojo.icon.header.aligned {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.wojo.disabled.header {
+  opacity: 0.5;
+}
+/* == Variations == */
+.wojo.info.header {
+  color: #5795AF;
+}
+.wojo.black.header {
+  color: #5C6166;
+}
+.wojo.positive.header,
+.wojo.success.header  {
+  color: #B2D280;
+}
+.wojo.warning.header {
+  color: #EDAA10;
+}
+.wojo.danger.header,
+.wojo.negative.header {
+  color: #A26161;
+}
+.wojo.purple.header {
+  color: #7A6591;
+}
+.wojo.teal.header {
+  color: #3CC9CA;
+}
+.wojo.info.dividing.header {
+  border-bottom: 3px solid #5795AF;
+}
+.wojo.warning.dividing.header {
+  border-bottom: 3px solid #EDAA10;
+}
+.wojo.black.dividing.header {
+  border-bottom: 3px solid #5C6166;
+}
+.wojo.positive.dividing.header {
+  border-bottom: 3px solid #B2D280;
+}
+.wojo.danger.dividing.header {
+  border-bottom: 3px solid #A26161;
+}
+.wojo.purple.dividing.header {
+  border-bottom: 3px solid #7A6591;
+}
+.wojo.teal.dividing.header {
+  border-bottom: 3px solid #3CC9CA;
+}
+/* == Inverted == */
+.wojo.inverted.header {
+  color: #FFFFFF;
+}
+.wojo.inverted.header .sub.header {
+  color: rgba(255, 255, 255, 0.85);
+}
+.wojo.inverted.black.header {
+  background-color: #5C6166;
+  color: #FFFFFF;
+}
+.wojo.inverted.info.header {
+  background-color: #5795AF;
+  color: #FFFFFF;
+}
+.wojo.inverted.positive.header {
+  background-color: #B2D280;
+  color: #FFFFFF;
+}
+.wojo.inverted.danger.header {
+  background-color: #A26161;
+  color: #FFFFFF;
+}
+.wojo.inverted.warning.header {
+  background-color: #EDAA10;
+  color: #FFFFFF;
+}
+.wojo.inverted.purple.header {
+  background-color: #7A6591;
+  color: #FFFFFF;
+}
+.wojo.inverted.teal.header {
+  background-color: #3CC9CA;
+  color: #FFFFFF;
+}
+.wojo.inverted.block.header {
+  border-bottom: none;
+}
+/* == Aligned == */
+
+.wojo.left.aligned.header {
+  text-align: left;
+}
+.wojo.right.aligned.header {
+  text-align: right;
+}
+.wojo.center.aligned.header {
+  text-align: center;
+}
+.wojo.justified.header {
+  text-align: justify;
+}
+.wojo.justified.header:after {
+  display: inline-block;
+  content: '';
+  width: 100%;
+}
+/* == Floated == */
+.wojo.floated.header,
+.wojo.left.floated.header {
+  float: left;
+  margin-top: 0em;
+  margin-right: 0.5em;
+}
+.wojo.right.floated.header {
+  float: right;
+  margin-top: 0em;
+  margin-left: 0.5em;
+}
+/* == Fitted == */
+.wojo.fitted.header {
+  margin: 0em;
+}
+/* == Dividing == */
+.wojo.dividing.header {
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.wojo.dividing.header .sub.header {
+  padding-bottom: 0.5em;
+}
+.wojo.dividing.header .icon {
+  margin-bottom: 0.2em;
+}
+.wojo.block.header {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.5em 1em;
+  font-weight: 300;
+}
+
+/* == Split == */
+.wojo.split.header {
+  overflow: hidden;
+  text-align: center;
+}
+.wojo.split.header span:before {
+  margin-right: 0.5em;
+  right: 100%;
+}
+.wojo.split.header span:before,
+.wojo.split.header span:after {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  content: "";
+  height: 0.5em;
+  position: absolute;
+  top: 50%;
+  width: 200em;
+}
+.wojo.split.header span:after {
+  left: 100%;
+  margin-left: 0.5em;
+}
+.wojo.split.header span {
+  position: relative;
+}
+.wojo.split.header.right {
+  text-align: left;
+}
+/* == Double == */
+.wojo.double.header {
+  overflow: hidden;
+  border-bottom: 1px solid #E14D43;
+  margin-bottom:1em;
+}
+.wojo.double.header span {
+  display:inline-block;
+  border-bottom: 3px solid #E14D43;
+  padding-bottom:.25em;
+  
+}
+.wojo.double.inverted.header {
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+.wojo.double.header span {
+  display:inline-block;
+  border-bottom: 2px solid #E14D43;
+  padding-bottom:.25em;
+  
+}
+/* == Attached == */
+.wojo.attached.header {
+  background-color: #E0E0E0;
+  padding: 0.5em 1rem;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+}
+.wojo.top.attached.header {
+  margin-bottom: 0em;
+  border-radius: 0.3125em 0.3125em 0em 0em;
+}
+.wojo.bottom.attached.header {
+  margin-top: 0em;
+  border-radius: 0em 0em 0.3125em 0.3125em;
+}

@@ -1,0 +1,34 @@
+<pre>Array
+(
+    [sid] => 532001
+    [ship_method] => 
+    [fixed] => Y
+    [ship_country] => 
+    [ship_zip] => 54321
+    [key] => 0A45DFE35A2CDE2F0255E86D766E8ABD
+    [state] => OH
+    [email] => customer-email@example.com
+    [city] => Columbus
+    [street_address] => 123 1st Street
+    [ship_city] => Columbus
+    [cart_order_id] => T357
+    [order_number] => 4111197315
+    [ip_country] => United States
+    [country] => USA
+    [merchant_order_id] => 
+    [cart_id] => T357
+    [lang] => en
+    [ship_state] => OH
+    [ship_street_address] => 321 2nd Street
+    [demo] => Y
+    [pay_method] => CC
+    [total] => 1.00
+    [ship_street_address2] => Suite 123
+    [phone] => 123-456-7890
+    [credit_card_processed] => Y
+    [zip] => 12345
+    [street_address2] => Apartment 1A
+    [ship_name] => Jane Doe
+    [custom_form_data] => 0_1_5f5984656d2d26fc688c4aa02d767bc351719d43
+)
+</pre>

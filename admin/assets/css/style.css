@@ -1,0 +1,317 @@
+html,
+body {
+  font-size: 14px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  color: #64768E;
+  text-rendering: optimizeLegibility;
+  font-weight: 400;
+  background-color: #2C2F35;
+}
+a {
+  cursor: pointer;
+  color: #486B9B;
+  text-decoration: none;
+  -webkit-transition: all .35s ease;
+  -moz-transition: all .35s ease;
+  -o-transition: all .35s ease;
+  transition: all .35s ease;
+  outline: none
+}
+a:hover,
+a.hover,
+a:focus {
+  color: #C33C36;
+  -webkit-transition: all .55s ease;
+  -moz-transition: all .55s ease;
+  -o-transition: all .35s ease;
+  transition: all .55s ease;
+  outline: none;
+  text-decoration: none
+}
+#page {
+  background-color: #364252;
+  border-top: 1px solid rgba(0,0,0,0.3);
+  box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.1);
+}
+.wojo-content {
+  padding: 1em;
+}
+h1,
+h2.h3.h4,
+h5,
+h6 {
+  font-family: 'Roboto Condensed';
+  font-weight: 600;
+}
+header {
+  background-color: #33527B;
+  margin-top: 3em;
+  border-radius: 1em 1em 0 0;
+  padding: 1em;
+}
+nav {
+  background-color: #C33C36;
+  padding: 1em;
+  display: block;
+}
+nav ul,
+nav li {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+nav > ul > li {
+  float: left;
+  position: relative;
+}
+nav > ul > li > a {
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  color: rgba(255,255,255,0.5);
+  padding-top: 1em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  position: relative;
+}
+nav > ul > li > a:hover {
+  color: rgba(255,255,255,0.8)
+}
+nav > ul > li > a.active {
+  color: rgba(255,255,255,0.8);
+  background-color: #B53933;
+  box-shadow: inset 0 0 0 1px #8E3430;
+  border-radius: .5em;
+}
+nav > ul > li > a.active:after {
+  position: absolute;
+  bottom: -1em;
+  left: 0;
+  width: 100%;
+  content: "";
+  border-bottom: 2px solid #2E3745;
+  height: 2px;
+}
+nav > ul > li > a i.icon:not(.triangle) {
+  display: block;
+  font-size: 2em;
+  margin-bottom: .5em;
+}
+nav > ul ul {
+  display: none;
+  position: absolute;
+  background: #2E3745;
+  left: 0;
+  z-index: 2000;
+  white-space: nowrap;
+  box-shadow: 10px 10px 0 0 rgba(0,0,0,0.3);
+}
+nav > ul ul:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #2E3745;
+  font-size: 0;
+  line-height: 0;
+  top: -5px;
+  left: 47%;
+}
+nav > ul > li.opened ul {
+  display: block;
+}
+nav > ul ul > li {
+  box-shadow: 0 1px 0 0 rgba(255,255,255,0.075);
+}
+nav > ul ul > li > a {
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  display: block;
+  padding-top: 0.5em;
+  padding-right: 1.5em;
+  padding-bottom: 0.5em;
+  padding-left: .5em;
+}
+nav > ul ul > li > a i.icon {
+  margin-right: 1em;
+  font-weight: 400;
+}
+nav > ul ul > li > a:hover {
+  background-color: #B53933;
+  color: #fff
+}
+footer {
+  background-color: #333E4D;
+  border-radius: 0 0 1em 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  padding-top: 2em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+  padding-left: 1em;
+}
+#suggestions {
+  position: absolute;
+  width: 100%;
+  z-index: 100
+}
+.crumbnav {
+  background-color: #2E3745;
+  padding: 1em;
+  position: relative;
+}
+.id-handle .icon.reorder {
+  cursor: move
+}
+/* == Tabs == */	
+#tabs {
+  float: right;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: .25em;
+}
+#tabs,
+#tabs li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0
+}
+#tabs li {
+  display: block;
+  float: left
+}
+#tabs li a {
+  font-size: 1rem;
+  display: block;
+  padding: .5em 1em
+}
+#tabs li a.active {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0.225em;
+}
+/* Visual Forms */
+#renderForm .fields {
+  background-color: #333e4d;
+  margin-bottom: .5em;
+  border: 2px dashed #2e3745;
+  padding: .5em;
+  border-radius: 3px;
+}
+#renderForm .field {
+  margin-bottom: 0;
+}
+#renderForm .field > label {
+  background-color: #2e3745;
+  text-align: center;
+  text-shadow: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  margin: 1px;
+  padding-top: .65em;
+  padding-bottom: .65em;
+}
+#renderForm .field i.icon.add.sign {
+  font-size: 2em;
+  display: block;
+  width: 2em;
+  margin-right: auto;
+  margin-left: auto;
+  cursor: pointer;
+}
+.wojo.items.fluid > .row > .item,
+.wojo.items.fluid > .item {
+  margin: 0em 1% .5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wojo.items.fluid > .item a {
+  display: block;
+}
+#allfields {
+  min-width: 400px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+.placeholder2 {
+  background-color: #FFC!important;
+  background-image: none!important;
+  border: 1px solid #FC9!important;
+  height: 42px!important
+}
+#removerows {
+  background-color: #c33c36;
+  padding: .65em;
+  text-align: center;
+  overflow: hidden;
+  color: #fff
+}
+#removerows.state-highlight {
+  background-color: #F0C4C1;
+}
+#removerows.state-active {
+  background-color: #c33c36;
+}
+
+@media screen and (max-width:1024px) {
+  header {
+    margin-top: 0;
+    border-radius: 0;
+  }
+  footer {
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width:769px) {
+  nav > ul > li {
+    float: none;
+    position: relative;
+  }
+  nav > ul > li > a {
+    text-align: left;
+    padding: .5em;
+    box-shadow: 0 1px 0 0 rgba(255,255,255,0.1);
+  }
+  nav > ul > li > a:hover {
+    color: rgba(255,255,255,0.8)
+  }
+  nav > ul > li > a.active {
+    color: rgba(255,255,255,0.8);
+    background-color: #B53933;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  nav > ul > li > a.active:after {
+    border-bottom: 0;
+    height: 0;
+  }
+  nav > ul > li > a i.icon:not(.triangle) {
+    display: inline-block;
+    font-size: 1em;
+    margin-bottom: 0;
+    margin-right: .5em;
+  }
+  nav > ul > li > a i.icon.triangle {
+    float: right;
+    font-size: 1em;
+    margin-bottom: 0;
+    margin-right: .5em;
+  }
+  nav > ul ul {
+    width: 100%
+  }
+}

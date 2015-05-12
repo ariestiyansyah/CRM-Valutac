@@ -1,0 +1,242 @@
+html,
+body {
+  font-size: 14px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  color: #ededed;
+  text-rendering: optimizeLegibility;
+  font-weight: 400;
+  height: 100%;
+  
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-color: #515671;
+  background-image: url(../images/bg.svg);
+  background-origin: padding-box;
+  background-position: 100% 100%;
+  background-repeat: repeat;
+  background-size: 100% 100%;
+ /*
+  background: #515671;
+  background: -moz-linear-gradient(-45deg,  #515671 0%, #adb7b3 33%, #a1afad 48%, #ddcfc5 63%, #465161 80%, #2e283c 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#515671), color-stop(33%,#adb7b3), color-stop(48%,#a1afad), color-stop(63%,#ddcfc5), color-stop(80%,#465161), color-stop(100%,#2e283c));
+  background: -webkit-linear-gradient(-45deg,  #515671 0%,#adb7b3 33%,#a1afad 48%,#ddcfc5 63%,#465161 80%,#2e283c 100%);
+  background: -o-linear-gradient(-45deg,  #515671 0%,#adb7b3 33%,#a1afad 48%,#ddcfc5 63%,#465161 80%,#2e283c 100%);
+  background: -ms-linear-gradient(-45deg,  #515671 0%,#adb7b3 33%,#a1afad 48%,#ddcfc5 63%,#465161 80%,#2e283c 100%);
+  background: linear-gradient(135deg,  #515671 0%,#adb7b3 33%,#a1afad 48%,#ddcfc5 63%,#465161 80%,#2e283c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#515671', endColorstr='#2e283c',GradientType=1 );
+   */
+}
+a,
+a.inverted,
+a.white {
+  cursor: pointer;
+  color: #FF4A2C;
+  text-decoration: none;
+  -webkit-transition: all .35s ease;
+  -moz-transition: all .35s ease;
+  -o-transition: all .35s ease;
+  transition: all .35s ease;
+  outline: none;
+  white-space: nowrap;
+}
+a.inverted {
+  color: #999;
+}
+a.white {
+  color: #fff;
+}
+a:hover,
+a.hover,
+a:focus {
+  color: #9DC745;
+  -webkit-transition: all .55s ease;
+  -moz-transition: all .55s ease;
+  -o-transition: all .35s ease;
+  transition: all .55s ease;
+  outline: none;
+  text-decoration: none
+}
+a.inverted:hover,
+a.inverted:focus {
+  color: #E14D43;
+}
+a.white:hover,
+a.white:focus {
+  color: #E14D43;
+}
+hr {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: 0;
+  height: 3px;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0));
+  background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0));
+  background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0));
+  background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0));
+}
+h1,
+h2,
+h2.h3.h4,
+h3,
+h5,
+h6 {
+  font-family: Roboto;
+  color: #ECF0F1;
+  margin-bottom: 1rem;
+}
+.wojo-content {
+  padding: 1em;
+}
+header {
+  background: #304956;
+  background: -moz-linear-gradient(left, #304956 0%, #3f5d68 50%, #304956 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #304956), color-stop(50%, #3f5d68), color-stop(100%, #304956));
+  background: -webkit-linear-gradient(left, #304956 0%, #3f5d68 50%, #304956 100%);
+  background: -o-linear-gradient(left, #304956 0%, #3f5d68 50%, #304956 100%);
+  background: -ms-linear-gradient(left, #304956 0%, #3f5d68 50%, #304956 100%);
+  background: linear-gradient(to right, #304956 0%, #3f5d68 50%, #304956 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#304956', endColorstr='#304956', GradientType=1 );
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  margin-left: -1em;
+  margin-right: -1em;
+  padding: 1.5em;
+}
+.panel-wrap {
+  display: table;
+  margin-top: 4em;
+  width: 100%;
+  box-shadow: 0 0 5px 2px rgba(0,0,0,0.15);
+}
+.main-wrap,
+.menu-wrap {
+  display: table-cell;
+  vertical-align: top;
+}
+.main-wrap {
+  background: #456f83;
+  background: -moz-linear-gradient(-45deg, #456f83 0%, #57948f 30%, #1b4c5a 66%, #0b1f34 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #456f83), color-stop(30%, #57948f), color-stop(66%, #1b4c5a), color-stop(100%, #0b1f34));
+  background: -webkit-linear-gradient(-45deg, #456f83 0%, #57948f 30%, #1b4c5a 66%, #0b1f34 100%);
+  background: -o-linear-gradient(-45deg, #456f83 0%, #57948f 30%, #1b4c5a 66%, #0b1f34 100%);
+  background: -ms-linear-gradient(-45deg, #456f83 0%, #57948f 30%, #1b4c5a 66%, #0b1f34 100%);
+  background: linear-gradient(135deg, #456f83 0%, #57948f 30%, #1b4c5a 66%, #0b1f34 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#456f83', endColorstr='#0b1f34', GradientType=1 );
+  padding: 1em;
+  padding-top: 0;
+}
+.menu-wrap {
+  width: 150px;
+  background-color: #273343;
+}
+.panel-wrap:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  zoom: 1
+}
+#menu ul,
+#menu li {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+#menu li {
+  margin-bottom: 2em;
+  position: relative;
+}
+#menu li:after {
+  font-family: Icons;
+  content: "\f141";
+  position: absolute;
+  text-align: center;
+  width: 100%
+}
+#menu li:last-child:after {
+  content: "";
+}
+#menu li a,
+#menu li a > i {
+  display: block
+}
+#menu li a {
+  text-align: center;
+  color: #787878;
+  font-size: 1em;
+  font-weight: 500;
+}
+#menu li a.active,
+#menu li a:hover {
+  color: #FF4A2C;
+  position: relative;
+}
+#menu li a.active {
+  color: #fff;
+}
+#menu li a.active:before {
+  border: 2px solid #FF4A2C;
+  content: "";
+  position: absolute;
+  border-radius: 0 3px 3px 0;
+  left: 0;
+  height: 100%;
+  top: 0
+}
+#menu li a > i {
+  font-size: 1.429em;
+  margin-bottom: .25em;
+}
+#menu li a.active > i {
+  color: #FF4A2C;
+}
+.mail-header{
+  background-color: rgba(54, 68, 83, 0.65);
+  padding:1em;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, .6), 0 2px 0 0 rgba(255, 255, 255, .3);
+  position:relative
+
+}
+.emptymail:after,
+.emptyticket:after{
+  font-family: icons;
+  content: "\f0e0";
+  font-size: 10em;
+  position:absolute;
+  left:40%;
+  top:20%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  opacity:.05
+}
+.emptyticket:after{
+  content: "\f1cd";
+}
+footer {
+  color: #FFF;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+@media screen and (min-width:650px) and (max-width:1024px) {
+.panel-wrap {
+  margin-top: 0;
+}
+}
+@media screen and (max-width:769px) {
+.panel-wrap {
+  margin-top: 0;
+}
+#menu li a span{
+  display:none
+}
+.menu-wrap {
+  width: 60px;
+}
+}

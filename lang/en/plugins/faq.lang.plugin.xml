@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+  
+  <!-- Admin F.A.Q. -->
+  <phrase data="FAQ_TITLE">Manage F.A.Q.</phrase>
+  <phrase data="FAQ_INFO">Here you can manage your f.a.q. Click on ? to edit question.</phrase>
+  <phrase data="FAQ_SUB">Viewing Frequently Asked Questions</phrase>
+  <phrase data="FAQ_ADDNEW">Add a Question</phrase>
+  <phrase data="FAQ_FILTER">Enter text to filter content...</phrase>
+  <phrase data="FAQ_EDITFAQ">Editing Question / </phrase>
+  <phrase data="FAQ_ADDFAQ">Adding Question</phrase>
+  <phrase data="FAQ_QUESTION">Question</phrase>
+  <phrase data="FAQ_ANSWER">Answer</phrase>
+  <phrase data="FAQ_NOFAQS">You don't have any question yet. Pleas add...</phrase>
+  <phrase data="FAQ_Q">Q</phrase>
+  <phrase data="FAQ_A">A</phrase>
+  <phrase data="FAQ_DELETE">Delete F.A.Q.</phrase>
+  <phrase data="FAQ_UPDATE">Update F.A.Q.</phrase>
+  <phrase data="FAQ_ADDNEW">Add Question</phrase>
+  <phrase data="FAQ_DELFAQ_OK">F.A.Q.  [NAME]  deleted successfully!</phrase>
+  <phrase data="FAQ_UPDATED">Question updated successfully!</phrase>
+  <phrase data="FAQ_ADDED">Question added successfully!</phrase>
+</language>
